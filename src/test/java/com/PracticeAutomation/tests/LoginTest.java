@@ -1,6 +1,7 @@
 package com.PracticeAutomation.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.PracticeAutomation.base.BaseClass;
@@ -8,6 +9,7 @@ import com.PracticeAutomation.pages.LoginPage;
 import com.PracticeAutomation.utils.ConfigReader;
 import com.PracticeAutomation.utils.ReportUtils;
 
+@Listeners(com.PracticeAutomation.utils.ExtentTestListner.class)
 public class LoginTest extends BaseClass {
 	
 	

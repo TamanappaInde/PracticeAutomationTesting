@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-06T15:19:16 IST" name="Default suite" finished-at="2025-11-06T15:19:41 IST" duration-ms="25260">
+  <suite started-at="2025-11-10T15:59:26 IST" name="Suite" finished-at="2025-11-10T16:00:06 IST" duration-ms="40391">
     <groups>
     </groups>
-    <test started-at="2025-11-06T15:19:16 IST" name="Default test" finished-at="2025-11-06T15:19:41 IST" duration-ms="25260">
+    <test started-at="2025-11-10T15:59:26 IST" name="Practice Automation Test" finished-at="2025-11-10T16:00:06 IST" duration-ms="40391">
       <class name="com.PracticeAutomation.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@7dfd3c81]" started-at="2025-11-06T15:19:16 IST" name="setUp" finished-at="2025-11-06T15:19:29 IST" duration-ms="13115" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@2eee3069]" started-at="2025-11-10T15:59:26 IST" name="setUp" finished-at="2025-11-10T15:59:57 IST" duration-ms="31322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@7dfd3c81]" started-at="2025-11-06T15:19:29 IST" name="loginTest" finished-at="2025-11-06T15:19:39 IST" duration-ms="10676" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@2eee3069]" started-at="2025-11-10T15:59:57 IST" name="loginTest" finished-at="2025-11-10T16:00:05 IST" duration-ms="8389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@7dfd3c81]" started-at="2025-11-06T15:19:40 IST" name="tearDown" finished-at="2025-11-06T15:19:41 IST" duration-ms="794" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.PracticeAutomation.tests.LoginTest@2eee3069]" started-at="2025-11-10T16:00:05 IST" name="tearDown" finished-at="2025-11-10T16:00:06 IST" duration-ms="553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.PracticeAutomation.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.PracticeAutomation.tests.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.PracticeAutomation.tests.RegisterTest@b1712f3]" started-at="2025-11-10T15:59:26 IST" name="setUp" finished-at="2025-11-10T15:59:49 IST" duration-ms="23620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerTest()[pri:0, instance:com.PracticeAutomation.tests.RegisterTest@b1712f3]" started-at="2025-11-10T15:59:49 IST" name="registerTest" finished-at="2025-11-10T15:59:58 IST" duration-ms="8515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.PracticeAutomation.tests.RegisterTest@b1712f3]" started-at="2025-11-10T15:59:58 IST" name="tearDown" finished-at="2025-11-10T15:59:59 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.PracticeAutomation.tests.RegisterTest -->
+    </test> <!-- Practice Automation Test -->
+  </suite> <!-- Suite -->
 </testng-results>
