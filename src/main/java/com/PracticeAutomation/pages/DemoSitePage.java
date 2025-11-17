@@ -52,7 +52,7 @@ public class DemoSitePage {
 	@FindBy(xpath="//select[@id='Skills']")
 	private static WebElement skillsdropdown;
 	// Select country
-	@FindBy(xpath="//span[@id='select2-country-container']")
+	@FindBy(xpath="//span[@class='select2-selection select2-selection--single']")
 	private static WebElement countrydropdown;
 	
 	
@@ -100,8 +100,49 @@ public class DemoSitePage {
 	// Select Country
 	public static void selectCountry() {
 		countrydropdown.click();
-		
+		List<WebElement> countryList = driver.findElements(By.xpath("//li[@class='select2-results__option']"));
+		System.out.println("Number of Countries Available : " + countryList.size());
+		String india = "India";
+		for (WebElement country : countryList) {
+			
+			if (country.getText().equals(india)) {
+				country.click();
+				break;
+			} else {
+				System.out.println("Country is not available");
+			}
+		}
 	}
+	
+	// Select a date
+	public static void selectDate() {
+		
+		// select year
+		WebElement yeardown = driver.findElement(By.id("yearbox"));
+		Select selectYear = new Select(yeardown);
+		selectYear.selectByVisibleText("1991");
+		// select month
+		WebElement selectmonth = driver.findElement(By.xpath("//select[@ng-model='monthbox']"));
+		Select selectMonth = new Select(selectmonth);
+		selectMonth.selectByVisibleText("March");
+		// select day
+		WebElement selectdate = driver.findElement(By.id("daybox"));
+		Select selectDate = new Select(selectdate);
+		selectDate.selectByVisibleText("12");
+	}
+	
+	// Enter the password
+	public static void enterPassword() {
+		
+		WebElement password = driver.findElement(By.id("firstpassword"));
+		password.sendKeys("inde@4221");
+		WebElement confirmPassword = driver.findElement(By.id("secondpassword"));
+		confirmPassword.sendKeys("inde@4221");
+		
+		// click on submit
+		driver.findElement(By.id("submitbtn")).click();
+	}
+
 	
 	public static void registerUser(Userdata user) {
 		demositelink.click();
@@ -115,6 +156,9 @@ public class DemoSitePage {
 		selectLanguage();
 		selectSkill();
 		selectCountry();
+		selectDate();
+		enterPassword();
+		
 	}
 
 }

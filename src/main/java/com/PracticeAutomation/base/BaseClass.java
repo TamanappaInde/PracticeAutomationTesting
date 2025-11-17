@@ -10,7 +10,7 @@ import com.PracticeAutomation.utils.ConfigReader;
 
 public class BaseClass {
 	
-	protected WebDriver driver;
+	protected static WebDriver driver;
 	ConfigReader reader;
 	
 	@BeforeClass
